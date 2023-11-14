@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+    <title>Coderhouse</title>
+{% endblock titulo %}
+
+{% block contenido %}
+    <h3>jugadores</h3>
+    <a href="{% url 'listar_jugadores' %}">lista de jugadores</a>
+
+{% endblock contenido %}

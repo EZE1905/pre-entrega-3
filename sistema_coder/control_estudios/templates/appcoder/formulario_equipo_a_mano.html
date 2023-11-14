@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+    <form method="post">
+    {% csrf_token %}
+        <p>Nombre del equipo</p>
+        <input type="text" name="nombre">
+        <p>liga</p>
+        <input type="text" name="liga" >
+        <input type="submit" value="Enviar">
+    </form>
+{% endblock contenido %}
